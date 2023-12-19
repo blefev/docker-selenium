@@ -762,7 +762,7 @@ ___
 You can pass `SE_OPTS` variable with additional command line parameters for starting a hub or a node.
 
 ``` bash
-$ docker run -d -p 4444:4444 -e SE_OPTS="--log-level FINE" --name selenium-hub selenium/hub:4.16.1-20231219
+$ docker run -d -p 4444:4444 -e SE_OPTS="--debug" --name selenium-hub selenium/hub:4.16.1-20231219
 ```
 
 ### SE_JAVA_OPTS Java Environment Options
@@ -1262,7 +1262,7 @@ $ docker logs -f <container-id|container-name>
 
 You can increase the log output by passing environment variable to the containers:
 ```
-SE_OPTS="--log-level FINE"
+SE_OPTS="--debug"
 ```
 
 ### `--shm-size="2g"`
